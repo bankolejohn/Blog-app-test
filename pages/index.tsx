@@ -7,6 +7,7 @@ import CardContent from "../components/ui/card/card-content"
 import CardFooter from "../components/ui/card/card-footer"
 import CardHeader from "../components/ui/card/card-header"
 import CardTitle from "../components/ui/card/card-title"
+import ChatWidget from "../components/ChatWidget"
 import { ArrowLeft, Calendar, Clock, User, Search, Menu, X, LogOut, Plus } from 'lucide-react'
 
 // Sample blog post data with full content
@@ -386,6 +387,9 @@ export default function BlogApp() {
           </div>
         </div>
       </footer>
+      
+      {/* Chat Widget */}
+      <ChatWidget />
     </div>
   )
 }
