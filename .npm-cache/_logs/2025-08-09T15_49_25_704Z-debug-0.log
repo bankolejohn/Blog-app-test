@@ -1,0 +1,672 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@11.5.2
+2 info using node@v22.13.0
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/bankolejohn/Desktop/Blog-app-test/.npmrc
+5 silly config load:file:/Users/bankolejohn/.npmrc
+6 silly config load:file:/usr/local/etc/npmrc
+7 verbose title npm ci
+8 verbose argv "ci" "--no-audit" "--no-fund" "--cache" ".npm-cache"
+9 verbose logfile logs-max:10 dir:/Users/bankolejohn/Desktop/Blog-app-test/.npm-cache/_logs/2025-08-09T15_49_25_704Z-
+10 verbose logfile /Users/bankolejohn/Desktop/Blog-app-test/.npm-cache/_logs/2025-08-09T15_49_25_704Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly reify moves {}
+15 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-win32-x64-msvc
+16 silly reify mark deleted [
+16 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-win32-x64-msvc'
+16 silly reify ]
+17 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-win32-arm64-msvc
+18 silly reify mark deleted [
+18 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-win32-arm64-msvc'
+18 silly reify ]
+19 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-linux-x64-musl
+20 silly reify mark deleted [
+20 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-linux-x64-musl'
+20 silly reify ]
+21 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-linux-x64-gnu
+22 silly reify mark deleted [
+22 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-linux-x64-gnu'
+22 silly reify ]
+23 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-linux-arm64-musl
+24 silly reify mark deleted [
+24 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-linux-arm64-musl'
+24 silly reify ]
+25 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-linux-arm64-gnu
+26 silly reify mark deleted [
+26 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-linux-arm64-gnu'
+26 silly reify ]
+27 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-linux-arm-gnueabihf
+28 silly reify mark deleted [
+28 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-linux-arm-gnueabihf'
+28 silly reify ]
+29 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-freebsd-x64
+30 silly reify mark deleted [
+30 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-freebsd-x64'
+30 silly reify ]
+31 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-darwin-arm64
+32 silly reify mark deleted [
+32 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/lightningcss-darwin-arm64'
+32 silly reify ]
+33 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-win32-x64-msvc
+34 silly reify mark deleted [
+34 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-win32-x64-msvc'
+34 silly reify ]
+35 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-win32-arm64-msvc
+36 silly reify mark deleted [
+36 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-win32-arm64-msvc'
+36 silly reify ]
+37 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-linux-x64-musl
+38 silly reify mark deleted [
+38 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-linux-x64-musl'
+38 silly reify ]
+39 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-linux-x64-gnu
+40 silly reify mark deleted [
+40 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-linux-x64-gnu'
+40 silly reify ]
+41 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-linux-arm64-musl
+42 silly reify mark deleted [
+42 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-linux-arm64-musl'
+42 silly reify ]
+43 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-linux-arm64-gnu
+44 silly reify mark deleted [
+44 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-linux-arm64-gnu'
+44 silly reify ]
+45 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-linux-arm-gnueabihf
+46 silly reify mark deleted [
+46 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-linux-arm-gnueabihf'
+46 silly reify ]
+47 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-freebsd-x64
+48 silly reify mark deleted [
+48 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-freebsd-x64'
+48 silly reify ]
+49 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-darwin-arm64
+50 silly reify mark deleted [
+50 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-darwin-arm64'
+50 silly reify ]
+51 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-android-arm64
+52 silly reify mark deleted [
+52 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@tailwindcss/oxide-android-arm64'
+52 silly reify ]
+53 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@next/swc-win32-x64-msvc
+54 silly reify mark deleted [
+54 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@next/swc-win32-x64-msvc'
+54 silly reify ]
+55 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@next/swc-win32-arm64-msvc
+56 silly reify mark deleted [
+56 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@next/swc-win32-arm64-msvc'
+56 silly reify ]
+57 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@next/swc-linux-x64-musl
+58 silly reify mark deleted [
+58 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@next/swc-linux-x64-musl'
+58 silly reify ]
+59 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@next/swc-linux-x64-gnu
+60 silly reify mark deleted [
+60 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@next/swc-linux-x64-gnu'
+60 silly reify ]
+61 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@next/swc-linux-arm64-musl
+62 silly reify mark deleted [
+62 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@next/swc-linux-arm64-musl'
+62 silly reify ]
+63 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@next/swc-linux-arm64-gnu
+64 silly reify mark deleted [
+64 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@next/swc-linux-arm64-gnu'
+64 silly reify ]
+65 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@next/swc-darwin-arm64
+66 silly reify mark deleted [
+66 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@next/swc-darwin-arm64'
+66 silly reify ]
+67 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-win32-x64
+68 silly reify mark deleted [
+68 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-win32-x64'
+68 silly reify ]
+69 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-win32-ia32
+70 silly reify mark deleted [
+70 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-win32-ia32'
+70 silly reify ]
+71 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-wasm32
+72 silly reify mark deleted [
+72 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-wasm32'
+72 silly reify ]
+73 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@emnapi/runtime
+74 silly reify mark deleted [
+74 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@emnapi/runtime'
+74 silly reify ]
+75 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-linuxmusl-x64
+76 silly reify mark deleted [
+76 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-linuxmusl-x64'
+76 silly reify ]
+77 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-linuxmusl-arm64
+78 silly reify mark deleted [
+78 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-linuxmusl-arm64'
+78 silly reify ]
+79 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-linux-x64
+80 silly reify mark deleted [
+80 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-linux-x64'
+80 silly reify ]
+81 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-linux-s390x
+82 silly reify mark deleted [
+82 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-linux-s390x'
+82 silly reify ]
+83 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-linux-arm64
+84 silly reify mark deleted [
+84 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-linux-arm64'
+84 silly reify ]
+85 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-linux-arm
+86 silly reify mark deleted [
+86 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-linux-arm'
+86 silly reify ]
+87 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-libvips-linuxmusl-x64
+88 silly reify mark deleted [
+88 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-libvips-linuxmusl-x64'
+88 silly reify ]
+89 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-libvips-linuxmusl-arm64
+90 silly reify mark deleted [
+90 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-libvips-linuxmusl-arm64'
+90 silly reify ]
+91 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-libvips-linux-x64
+92 silly reify mark deleted [
+92 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-libvips-linux-x64'
+92 silly reify ]
+93 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-libvips-linux-s390x
+94 silly reify mark deleted [
+94 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-libvips-linux-s390x'
+94 silly reify ]
+95 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-libvips-linux-arm64
+96 silly reify mark deleted [
+96 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-libvips-linux-arm64'
+96 silly reify ]
+97 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-libvips-linux-arm
+98 silly reify mark deleted [
+98 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-libvips-linux-arm'
+98 silly reify ]
+99 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-libvips-darwin-arm64
+100 silly reify mark deleted [
+100 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-libvips-darwin-arm64'
+100 silly reify ]
+101 verbose reify failed optional dependency /Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-darwin-arm64
+102 silly reify mark deleted [
+102 silly reify   '/Users/bankolejohn/Desktop/Blog-app-test/node_modules/@img/sharp-darwin-arm64'
+102 silly reify ]
+103 http cache yallist@https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz 0ms (cache hit)
+104 http cache util-deprecate@https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 0ms (cache hit)
+105 http cache uuid@https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz 0ms (cache hit)
+106 http cache undici-types@https://registry.npmjs.org/undici-types/-/undici-types-6.19.8.tgz 0ms (cache hit)
+107 http cache typescript@https://registry.npmjs.org/typescript/-/typescript-5.8.2.tgz 0ms (cache hit)
+108 http cache typedarray@https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz 0ms (cache hit)
+109 http cache type-is@https://registry.npmjs.org/type-is/-/type-is-1.6.18.tgz 0ms (cache hit)
+110 http cache tslib@https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz 0ms (cache hit)
+111 http cache tapable@https://registry.npmjs.org/tapable/-/tapable-2.2.1.tgz 0ms (cache hit)
+112 http cache tailwindcss@https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.0.15.tgz 0ms (cache hit)
+113 http cache styled-jsx@https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.6.tgz 0ms (cache hit)
+114 http cache string_decoder@https://registry.npmjs.org/string_decoder/-/string_decoder-1.3.0.tgz 0ms (cache hit)
+115 http cache streamsearch@https://registry.npmjs.org/streamsearch/-/streamsearch-1.1.0.tgz 0ms (cache hit)
+116 http cache xtend@https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz 0ms (cache hit)
+117 http cache simple-swizzle@https://registry.npmjs.org/simple-swizzle/-/simple-swizzle-0.2.2.tgz 0ms (cache hit)
+118 http cache source-map-js@https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz 0ms (cache hit)
+119 http cache sharp@https://registry.npmjs.org/sharp/-/sharp-0.33.5.tgz 0ms (cache hit)
+120 http cache scheduler@https://registry.npmjs.org/scheduler/-/scheduler-0.25.0.tgz 0ms (cache hit)
+121 http cache semver@https://registry.npmjs.org/semver/-/semver-7.7.1.tgz 0ms (cache hit)
+122 http cache safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz 0ms (cache hit)
+123 http cache readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-3.6.2.tgz 0ms (cache hit)
+124 http cache react-dom@https://registry.npmjs.org/react-dom/-/react-dom-19.0.0.tgz 0ms (cache hit)
+125 http cache react@https://registry.npmjs.org/react/-/react-19.0.0.tgz 0ms (cache hit)
+126 http cache prisma@https://registry.npmjs.org/prisma/-/prisma-6.10.1.tgz 0ms (cache hit)
+127 http cache pretty-format@https://registry.npmjs.org/pretty-format/-/pretty-format-3.8.0.tgz 0ms (cache hit)
+128 http cache preact-render-to-string@https://registry.npmjs.org/preact-render-to-string/-/preact-render-to-string-5.2.6.tgz 0ms (cache hit)
+129 http cache preact@https://registry.npmjs.org/preact/-/preact-10.26.9.tgz 0ms (cache hit)
+130 http cache postcss@https://registry.npmjs.org/postcss/-/postcss-8.5.3.tgz 0ms (cache hit)
+131 http cache picocolors@https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz 0ms (cache hit)
+132 http cache openid-client@https://registry.npmjs.org/openid-client/-/openid-client-5.7.1.tgz 0ms (cache hit)
+133 http cache oidc-token-hash@https://registry.npmjs.org/oidc-token-hash/-/oidc-token-hash-5.1.0.tgz 0ms (cache hit)
+134 http cache object-hash@https://registry.npmjs.org/object-hash/-/object-hash-2.2.0.tgz 0ms (cache hit)
+135 http cache object-assign@https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz 0ms (cache hit)
+136 http cache oauth@https://registry.npmjs.org/oauth/-/oauth-0.9.15.tgz 0ms (cache hit)
+137 http cache nanoid@https://registry.npmjs.org/nanoid/-/nanoid-3.3.11.tgz 0ms (cache hit)
+138 http cache next-auth@https://registry.npmjs.org/next-auth/-/next-auth-4.24.11.tgz 0ms (cache hit)
+139 http cache multer@https://registry.npmjs.org/multer/-/multer-2.0.1.tgz 0ms (cache hit)
+140 http cache mkdirp@https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.6.tgz 0ms (cache hit)
+141 http cache minimist@https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz 0ms (cache hit)
+142 http cache mime-types@https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz 0ms (cache hit)
+143 http cache mime-db@https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz 0ms (cache hit)
+144 http cache media-typer@https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz 0ms (cache hit)
+145 http cache lightningcss@https://registry.npmjs.org/lightningcss/-/lightningcss-1.29.2.tgz 0ms (cache hit)
+146 http cache lightningcss-darwin-x64@https://registry.npmjs.org/lightningcss-darwin-x64/-/lightningcss-darwin-x64-1.29.2.tgz 0ms (cache hit)
+147 http cache lru-cache@https://registry.npmjs.org/lru-cache/-/lru-cache-6.0.0.tgz 0ms (cache hit)
+148 http cache lucide-react@https://registry.npmjs.org/lucide-react/-/lucide-react-0.483.0.tgz 0ms (cache hit)
+149 http cache jose@https://registry.npmjs.org/jose/-/jose-4.15.9.tgz 0ms (cache hit)
+150 http cache jiti@https://registry.npmjs.org/jiti/-/jiti-2.4.2.tgz 0ms (cache hit)
+151 http cache inherits@https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz 0ms (cache hit)
+152 http cache is-arrayish@https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.3.2.tgz 0ms (cache hit)
+153 http cache graceful-fs@https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz 0ms (cache hit)
+154 http cache enhanced-resolve@https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.18.1.tgz 0ms (cache hit)
+155 http cache csstype@https://registry.npmjs.org/csstype/-/csstype-3.1.3.tgz 0ms (cache hit)
+156 http cache detect-libc@https://registry.npmjs.org/detect-libc/-/detect-libc-2.0.3.tgz 0ms (cache hit)
+157 http cache cookie@https://registry.npmjs.org/cookie/-/cookie-0.7.2.tgz 0ms (cache hit)
+158 http cache next@https://registry.npmjs.org/next/-/next-15.2.3.tgz 0ms (cache hit)
+159 http cache concat-stream@https://registry.npmjs.org/concat-stream/-/concat-stream-2.0.0.tgz 0ms (cache hit)
+160 http cache color-name@https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz 0ms (cache hit)
+161 http cache color-convert@https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz 0ms (cache hit)
+162 http cache client-only@https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz 0ms (cache hit)
+163 http cache color@https://registry.npmjs.org/color/-/color-4.2.3.tgz 0ms (cache hit)
+164 http cache buffer-from@https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz 0ms (cache hit)
+165 http cache busboy@https://registry.npmjs.org/busboy/-/busboy-1.6.0.tgz 0ms (cache hit)
+166 http cache caniuse-lite@https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001707.tgz 0ms (cache hit)
+167 http cache bcryptjs@https://registry.npmjs.org/bcryptjs/-/bcryptjs-3.0.2.tgz 0ms (cache hit)
+168 http cache append-field@https://registry.npmjs.org/append-field/-/append-field-1.0.0.tgz 0ms (cache hit)
+169 http cache @types/send@https://registry.npmjs.org/@types/send/-/send-0.17.5.tgz 0ms (cache hit)
+170 http cache @types/range-parser@https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.7.tgz 0ms (cache hit)
+171 http cache @types/react@https://registry.npmjs.org/@types/react/-/react-19.0.12.tgz 0ms (cache hit)
+172 http cache @types/qs@https://registry.npmjs.org/@types/qs/-/qs-6.14.0.tgz 0ms (cache hit)
+173 http cache @types/node@https://registry.npmjs.org/@types/node/-/node-20.17.27.tgz 0ms (cache hit)
+174 http cache @types/multer@https://registry.npmjs.org/@types/multer/-/multer-1.4.13.tgz 0ms (cache hit)
+175 http cache @types/mime@https://registry.npmjs.org/@types/mime/-/mime-1.3.5.tgz 0ms (cache hit)
+176 http cache @types/http-errors@https://registry.npmjs.org/@types/http-errors/-/http-errors-2.0.5.tgz 0ms (cache hit)
+177 http cache @types/express-serve-static-core@https://registry.npmjs.org/@types/express-serve-static-core/-/express-serve-static-core-5.0.6.tgz 0ms (cache hit)
+178 http cache @types/express@https://registry.npmjs.org/@types/express/-/express-5.0.3.tgz 0ms (cache hit)
+179 http cache @types/serve-static@https://registry.npmjs.org/@types/serve-static/-/serve-static-1.15.8.tgz 0ms (cache hit)
+180 http cache @types/connect@https://registry.npmjs.org/@types/connect/-/connect-3.4.38.tgz 0ms (cache hit)
+181 http cache @types/bcryptjs@https://registry.npmjs.org/@types/bcryptjs/-/bcryptjs-2.4.6.tgz 0ms (cache hit)
+182 http cache @tailwindcss/postcss@https://registry.npmjs.org/@tailwindcss/postcss/-/postcss-4.0.15.tgz 0ms (cache hit)
+183 http cache @tailwindcss/oxide-darwin-x64@https://registry.npmjs.org/@tailwindcss/oxide-darwin-x64/-/oxide-darwin-x64-4.0.15.tgz 0ms (cache hit)
+184 http cache @tailwindcss/oxide@https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.0.15.tgz 0ms (cache hit)
+185 http cache @types/body-parser@https://registry.npmjs.org/@types/body-parser/-/body-parser-1.19.6.tgz 0ms (cache hit)
+186 http cache @tailwindcss/node@https://registry.npmjs.org/@tailwindcss/node/-/node-4.0.15.tgz 0ms (cache hit)
+187 http cache @swc/helpers@https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.15.tgz 0ms (cache hit)
+188 http cache @prisma/get-platform@https://registry.npmjs.org/@prisma/get-platform/-/get-platform-6.10.1.tgz 0ms (cache hit)
+189 http cache color-string@https://registry.npmjs.org/color-string/-/color-string-1.9.1.tgz 0ms (cache hit)
+190 http cache @prisma/engines-version@https://registry.npmjs.org/@prisma/engines-version/-/engines-version-6.10.1-1.9b628578b3b7cae625e8c927178f15a170e74a9c.tgz 0ms (cache hit)
+191 http cache @prisma/engines@https://registry.npmjs.org/@prisma/engines/-/engines-6.10.1.tgz 0ms (cache hit)
+192 http cache @prisma/debug@https://registry.npmjs.org/@prisma/debug/-/debug-6.10.1.tgz 0ms (cache hit)
+193 http cache @prisma/config@https://registry.npmjs.org/@prisma/config/-/config-6.10.1.tgz 0ms (cache hit)
+194 http cache @prisma/client@https://registry.npmjs.org/@prisma/client/-/client-6.10.1.tgz 0ms (cache hit)
+195 http cache @prisma/fetch-engine@https://registry.npmjs.org/@prisma/fetch-engine/-/fetch-engine-6.10.1.tgz 0ms (cache hit)
+196 http cache @panva/hkdf@https://registry.npmjs.org/@panva/hkdf/-/hkdf-1.2.1.tgz 0ms (cache hit)
+197 http cache @next/env@https://registry.npmjs.org/@next/env/-/env-15.2.3.tgz 0ms (cache hit)
+198 http cache @next/swc-darwin-x64@https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-15.2.3.tgz 0ms (cache hit)
+199 http cache @img/sharp-libvips-darwin-x64@https://registry.npmjs.org/@img/sharp-libvips-darwin-x64/-/sharp-libvips-darwin-x64-1.0.4.tgz 0ms (cache hit)
+200 http cache @next-auth/prisma-adapter@https://registry.npmjs.org/@next-auth/prisma-adapter/-/prisma-adapter-1.0.7.tgz 0ms (cache hit)
+201 http cache @img/sharp-darwin-x64@https://registry.npmjs.org/@img/sharp-darwin-x64/-/sharp-darwin-x64-0.33.5.tgz 0ms (cache hit)
+202 http cache @emnapi/runtime@https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.3.1.tgz 0ms (cache hit)
+203 http cache @alloc/quick-lru@https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz 0ms (cache hit)
+204 http cache @babel/runtime@https://registry.npmjs.org/@babel/runtime/-/runtime-7.27.6.tgz 0ms (cache hit)
+205 http cache @types/react-dom@https://registry.npmjs.org/@types/react-dom/-/react-dom-19.0.4.tgz 0ms (cache hit)
+206 http cache postcss@https://registry.npmjs.org/postcss/-/postcss-8.4.31.tgz 0ms (cache hit)
+207 http cache @swc/counter@https://registry.npmjs.org/@swc/counter/-/counter-0.1.3.tgz 0ms (cache hit)
+208 silly tarball no local data for yallist@https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz. Extracting by manifest.
+209 silly tarball no local data for util-deprecate@https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz. Extracting by manifest.
+210 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz. Extracting by manifest.
+211 silly tarball no local data for undici-types@https://registry.npmjs.org/undici-types/-/undici-types-6.19.8.tgz. Extracting by manifest.
+212 silly tarball no local data for typescript@https://registry.npmjs.org/typescript/-/typescript-5.8.2.tgz. Extracting by manifest.
+213 silly tarball no local data for typedarray@https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz. Extracting by manifest.
+214 silly tarball no local data for type-is@https://registry.npmjs.org/type-is/-/type-is-1.6.18.tgz. Extracting by manifest.
+215 silly tarball no local data for tslib@https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz. Extracting by manifest.
+216 silly tarball no local data for tapable@https://registry.npmjs.org/tapable/-/tapable-2.2.1.tgz. Extracting by manifest.
+217 silly tarball no local data for tailwindcss@https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.0.15.tgz. Extracting by manifest.
+218 silly tarball no local data for styled-jsx@https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.6.tgz. Extracting by manifest.
+219 silly tarball no local data for streamsearch@https://registry.npmjs.org/streamsearch/-/streamsearch-1.1.0.tgz. Extracting by manifest.
+220 silly tarball no local data for string_decoder@https://registry.npmjs.org/string_decoder/-/string_decoder-1.3.0.tgz. Extracting by manifest.
+221 silly tarball no local data for xtend@https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz. Extracting by manifest.
+222 silly tarball no local data for simple-swizzle@https://registry.npmjs.org/simple-swizzle/-/simple-swizzle-0.2.2.tgz. Extracting by manifest.
+223 silly tarball no local data for source-map-js@https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz. Extracting by manifest.
+224 silly tarball no local data for sharp@https://registry.npmjs.org/sharp/-/sharp-0.33.5.tgz. Extracting by manifest.
+225 silly tarball no local data for scheduler@https://registry.npmjs.org/scheduler/-/scheduler-0.25.0.tgz. Extracting by manifest.
+226 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-7.7.1.tgz. Extracting by manifest.
+227 silly tarball no local data for safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz. Extracting by manifest.
+228 silly tarball no local data for readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-3.6.2.tgz. Extracting by manifest.
+229 silly tarball no local data for react-dom@https://registry.npmjs.org/react-dom/-/react-dom-19.0.0.tgz. Extracting by manifest.
+230 silly tarball no local data for react@https://registry.npmjs.org/react/-/react-19.0.0.tgz. Extracting by manifest.
+231 silly tarball no local data for prisma@https://registry.npmjs.org/prisma/-/prisma-6.10.1.tgz. Extracting by manifest.
+232 silly tarball no local data for pretty-format@https://registry.npmjs.org/pretty-format/-/pretty-format-3.8.0.tgz. Extracting by manifest.
+233 silly tarball no local data for preact-render-to-string@https://registry.npmjs.org/preact-render-to-string/-/preact-render-to-string-5.2.6.tgz. Extracting by manifest.
+234 silly tarball no local data for postcss@https://registry.npmjs.org/postcss/-/postcss-8.5.3.tgz. Extracting by manifest.
+235 silly tarball no local data for preact@https://registry.npmjs.org/preact/-/preact-10.26.9.tgz. Extracting by manifest.
+236 silly tarball no local data for picocolors@https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz. Extracting by manifest.
+237 silly tarball no local data for openid-client@https://registry.npmjs.org/openid-client/-/openid-client-5.7.1.tgz. Extracting by manifest.
+238 silly tarball no local data for oidc-token-hash@https://registry.npmjs.org/oidc-token-hash/-/oidc-token-hash-5.1.0.tgz. Extracting by manifest.
+239 silly tarball no local data for object-hash@https://registry.npmjs.org/object-hash/-/object-hash-2.2.0.tgz. Extracting by manifest.
+240 silly tarball no local data for object-assign@https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz. Extracting by manifest.
+241 silly tarball no local data for oauth@https://registry.npmjs.org/oauth/-/oauth-0.9.15.tgz. Extracting by manifest.
+242 silly tarball no local data for nanoid@https://registry.npmjs.org/nanoid/-/nanoid-3.3.11.tgz. Extracting by manifest.
+243 silly tarball no local data for next-auth@https://registry.npmjs.org/next-auth/-/next-auth-4.24.11.tgz. Extracting by manifest.
+244 silly tarball no local data for multer@https://registry.npmjs.org/multer/-/multer-2.0.1.tgz. Extracting by manifest.
+245 silly tarball no local data for mkdirp@https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.6.tgz. Extracting by manifest.
+246 silly tarball no local data for minimist@https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz. Extracting by manifest.
+247 silly tarball no local data for mime-types@https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz. Extracting by manifest.
+248 silly tarball no local data for mime-db@https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz. Extracting by manifest.
+249 silly tarball no local data for media-typer@https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz. Extracting by manifest.
+250 silly tarball no local data for lightningcss@https://registry.npmjs.org/lightningcss/-/lightningcss-1.29.2.tgz. Extracting by manifest.
+251 silly tarball no local data for lightningcss-darwin-x64@https://registry.npmjs.org/lightningcss-darwin-x64/-/lightningcss-darwin-x64-1.29.2.tgz. Extracting by manifest.
+252 silly tarball no local data for lru-cache@https://registry.npmjs.org/lru-cache/-/lru-cache-6.0.0.tgz. Extracting by manifest.
+253 silly tarball no local data for lucide-react@https://registry.npmjs.org/lucide-react/-/lucide-react-0.483.0.tgz. Extracting by manifest.
+254 silly tarball no local data for jose@https://registry.npmjs.org/jose/-/jose-4.15.9.tgz. Extracting by manifest.
+255 silly tarball no local data for jiti@https://registry.npmjs.org/jiti/-/jiti-2.4.2.tgz. Extracting by manifest.
+256 silly tarball no local data for inherits@https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz. Extracting by manifest.
+257 silly tarball no local data for is-arrayish@https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.3.2.tgz. Extracting by manifest.
+258 silly tarball no local data for graceful-fs@https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz. Extracting by manifest.
+259 silly tarball no local data for enhanced-resolve@https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.18.1.tgz. Extracting by manifest.
+260 silly tarball no local data for csstype@https://registry.npmjs.org/csstype/-/csstype-3.1.3.tgz. Extracting by manifest.
+261 silly tarball no local data for detect-libc@https://registry.npmjs.org/detect-libc/-/detect-libc-2.0.3.tgz. Extracting by manifest.
+262 silly tarball no local data for cookie@https://registry.npmjs.org/cookie/-/cookie-0.7.2.tgz. Extracting by manifest.
+263 silly tarball no local data for next@https://registry.npmjs.org/next/-/next-15.2.3.tgz. Extracting by manifest.
+264 silly tarball no local data for concat-stream@https://registry.npmjs.org/concat-stream/-/concat-stream-2.0.0.tgz. Extracting by manifest.
+265 silly tarball no local data for color-name@https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz. Extracting by manifest.
+266 silly tarball no local data for color-convert@https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz. Extracting by manifest.
+267 silly tarball no local data for client-only@https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz. Extracting by manifest.
+268 silly tarball no local data for color@https://registry.npmjs.org/color/-/color-4.2.3.tgz. Extracting by manifest.
+269 silly tarball no local data for buffer-from@https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz. Extracting by manifest.
+270 silly tarball no local data for busboy@https://registry.npmjs.org/busboy/-/busboy-1.6.0.tgz. Extracting by manifest.
+271 silly tarball no local data for caniuse-lite@https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001707.tgz. Extracting by manifest.
+272 silly tarball no local data for bcryptjs@https://registry.npmjs.org/bcryptjs/-/bcryptjs-3.0.2.tgz. Extracting by manifest.
+273 silly tarball no local data for append-field@https://registry.npmjs.org/append-field/-/append-field-1.0.0.tgz. Extracting by manifest.
+274 silly tarball no local data for @types/send@https://registry.npmjs.org/@types/send/-/send-0.17.5.tgz. Extracting by manifest.
+275 silly tarball no local data for @types/range-parser@https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.7.tgz. Extracting by manifest.
+276 silly tarball no local data for @types/react@https://registry.npmjs.org/@types/react/-/react-19.0.12.tgz. Extracting by manifest.
+277 silly tarball no local data for @types/qs@https://registry.npmjs.org/@types/qs/-/qs-6.14.0.tgz. Extracting by manifest.
+278 silly tarball no local data for @types/node@https://registry.npmjs.org/@types/node/-/node-20.17.27.tgz. Extracting by manifest.
+279 silly tarball no local data for @types/multer@https://registry.npmjs.org/@types/multer/-/multer-1.4.13.tgz. Extracting by manifest.
+280 silly tarball no local data for @types/mime@https://registry.npmjs.org/@types/mime/-/mime-1.3.5.tgz. Extracting by manifest.
+281 silly tarball no local data for @types/http-errors@https://registry.npmjs.org/@types/http-errors/-/http-errors-2.0.5.tgz. Extracting by manifest.
+282 silly tarball no local data for @types/express-serve-static-core@https://registry.npmjs.org/@types/express-serve-static-core/-/express-serve-static-core-5.0.6.tgz. Extracting by manifest.
+283 silly tarball no local data for @types/express@https://registry.npmjs.org/@types/express/-/express-5.0.3.tgz. Extracting by manifest.
+284 silly tarball no local data for @types/serve-static@https://registry.npmjs.org/@types/serve-static/-/serve-static-1.15.8.tgz. Extracting by manifest.
+285 silly tarball no local data for @types/connect@https://registry.npmjs.org/@types/connect/-/connect-3.4.38.tgz. Extracting by manifest.
+286 silly tarball no local data for @types/bcryptjs@https://registry.npmjs.org/@types/bcryptjs/-/bcryptjs-2.4.6.tgz. Extracting by manifest.
+287 silly tarball no local data for @tailwindcss/postcss@https://registry.npmjs.org/@tailwindcss/postcss/-/postcss-4.0.15.tgz. Extracting by manifest.
+288 silly tarball no local data for @tailwindcss/oxide-darwin-x64@https://registry.npmjs.org/@tailwindcss/oxide-darwin-x64/-/oxide-darwin-x64-4.0.15.tgz. Extracting by manifest.
+289 silly tarball no local data for @tailwindcss/oxide@https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.0.15.tgz. Extracting by manifest.
+290 silly tarball no local data for @types/body-parser@https://registry.npmjs.org/@types/body-parser/-/body-parser-1.19.6.tgz. Extracting by manifest.
+291 silly tarball no local data for @tailwindcss/node@https://registry.npmjs.org/@tailwindcss/node/-/node-4.0.15.tgz. Extracting by manifest.
+292 silly tarball no local data for @swc/helpers@https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.15.tgz. Extracting by manifest.
+293 silly tarball no local data for @prisma/get-platform@https://registry.npmjs.org/@prisma/get-platform/-/get-platform-6.10.1.tgz. Extracting by manifest.
+294 silly tarball no local data for color-string@https://registry.npmjs.org/color-string/-/color-string-1.9.1.tgz. Extracting by manifest.
+295 silly tarball no local data for @prisma/engines-version@https://registry.npmjs.org/@prisma/engines-version/-/engines-version-6.10.1-1.9b628578b3b7cae625e8c927178f15a170e74a9c.tgz. Extracting by manifest.
+296 silly tarball no local data for @prisma/engines@https://registry.npmjs.org/@prisma/engines/-/engines-6.10.1.tgz. Extracting by manifest.
+297 silly tarball no local data for @prisma/debug@https://registry.npmjs.org/@prisma/debug/-/debug-6.10.1.tgz. Extracting by manifest.
+298 silly tarball no local data for @prisma/config@https://registry.npmjs.org/@prisma/config/-/config-6.10.1.tgz. Extracting by manifest.
+299 silly tarball no local data for @prisma/client@https://registry.npmjs.org/@prisma/client/-/client-6.10.1.tgz. Extracting by manifest.
+300 silly tarball no local data for @prisma/fetch-engine@https://registry.npmjs.org/@prisma/fetch-engine/-/fetch-engine-6.10.1.tgz. Extracting by manifest.
+301 silly tarball no local data for @panva/hkdf@https://registry.npmjs.org/@panva/hkdf/-/hkdf-1.2.1.tgz. Extracting by manifest.
+302 silly tarball no local data for @next/env@https://registry.npmjs.org/@next/env/-/env-15.2.3.tgz. Extracting by manifest.
+303 silly tarball no local data for @next/swc-darwin-x64@https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-15.2.3.tgz. Extracting by manifest.
+304 silly tarball no local data for @img/sharp-libvips-darwin-x64@https://registry.npmjs.org/@img/sharp-libvips-darwin-x64/-/sharp-libvips-darwin-x64-1.0.4.tgz. Extracting by manifest.
+305 silly tarball no local data for @next-auth/prisma-adapter@https://registry.npmjs.org/@next-auth/prisma-adapter/-/prisma-adapter-1.0.7.tgz. Extracting by manifest.
+306 silly tarball no local data for @img/sharp-darwin-x64@https://registry.npmjs.org/@img/sharp-darwin-x64/-/sharp-darwin-x64-0.33.5.tgz. Extracting by manifest.
+307 silly tarball no local data for @emnapi/runtime@https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.3.1.tgz. Extracting by manifest.
+308 silly tarball no local data for @alloc/quick-lru@https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz. Extracting by manifest.
+309 silly tarball no local data for @babel/runtime@https://registry.npmjs.org/@babel/runtime/-/runtime-7.27.6.tgz. Extracting by manifest.
+310 silly tarball no local data for @types/react-dom@https://registry.npmjs.org/@types/react-dom/-/react-dom-19.0.4.tgz. Extracting by manifest.
+311 silly tarball no local data for postcss@https://registry.npmjs.org/postcss/-/postcss-8.4.31.tgz. Extracting by manifest.
+312 silly tarball no local data for @swc/counter@https://registry.npmjs.org/@swc/counter/-/counter-0.1.3.tgz. Extracting by manifest.
+313 http fetch GET https://registry.npmjs.org/typescript/-/typescript-5.8.2.tgz attempt 1 failed with ERR_SSL_SSLV3_ALERT_UNEXPECTED_MESSAGE
+314 http fetch GET https://registry.npmjs.org/string_decoder/-/string_decoder-1.3.0.tgz attempt 1 failed with ERR_SSL_SSLV3_ALERT_BAD_RECORD_MAC
+315 http fetch GET https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz attempt 1 failed with ERR_SSL_SSLV3_ALERT_BAD_RECORD_MAC
+316 http fetch GET 200 https://registry.npmjs.org/npm 1205ms
+317 http fetch GET 200 https://registry.npmjs.org/streamsearch/-/streamsearch-1.1.0.tgz 944ms (cache miss)
+318 http fetch GET 200 https://registry.npmjs.org/typedarray/-/typedarray-0.0.6.tgz 951ms (cache miss)
+319 http fetch GET 200 https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz 960ms (cache miss)
+320 http fetch GET 200 https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 959ms (cache miss)
+321 http fetch GET 200 https://registry.npmjs.org/type-is/-/type-is-1.6.18.tgz 960ms (cache miss)
+322 http fetch GET 200 https://registry.npmjs.org/tslib/-/tslib-2.8.1.tgz 1080ms (cache miss)
+323 http fetch GET 200 https://registry.npmjs.org/tapable/-/tapable-2.2.1.tgz 1080ms (cache miss)
+324 http fetch GET 200 https://registry.npmjs.org/simple-swizzle/-/simple-swizzle-0.2.2.tgz 1138ms (cache miss)
+325 http fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz 1222ms (cache miss)
+326 http fetch GET 200 https://registry.npmjs.org/undici-types/-/undici-types-6.19.8.tgz 1261ms (cache miss)
+327 http fetch GET 200 https://registry.npmjs.org/scheduler/-/scheduler-0.25.0.tgz 1319ms (cache miss)
+328 http fetch GET 200 https://registry.npmjs.org/pretty-format/-/pretty-format-3.8.0.tgz 1421ms (cache miss)
+329 http fetch GET 200 https://registry.npmjs.org/readable-stream/-/readable-stream-3.6.2.tgz 1539ms (cache miss)
+330 http fetch GET 200 https://registry.npmjs.org/picocolors/-/picocolors-1.1.1.tgz 1619ms (cache miss)
+331 http fetch GET 200 https://registry.npmjs.org/oidc-token-hash/-/oidc-token-hash-5.1.0.tgz 1674ms (cache miss)
+332 http fetch GET 200 https://registry.npmjs.org/object-hash/-/object-hash-2.2.0.tgz 1679ms (cache miss)
+333 http fetch GET 200 https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz 1679ms (cache miss)
+334 http fetch GET 200 https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.6.tgz 1679ms (cache miss)
+335 http fetch GET 200 https://registry.npmjs.org/multer/-/multer-2.0.1.tgz 1697ms (cache miss)
+336 http fetch GET 200 https://registry.npmjs.org/source-map-js/-/source-map-js-1.2.1.tgz 1753ms (cache miss)
+337 http fetch GET 200 https://registry.npmjs.org/nanoid/-/nanoid-3.3.11.tgz 1783ms (cache miss)
+338 http fetch GET 200 https://registry.npmjs.org/minimist/-/minimist-1.2.8.tgz 1806ms (cache miss)
+339 http fetch GET 200 https://registry.npmjs.org/media-typer/-/media-typer-0.3.0.tgz 1807ms (cache miss)
+340 http fetch GET 200 https://registry.npmjs.org/lru-cache/-/lru-cache-6.0.0.tgz 1807ms (cache miss)
+341 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz 1850ms (cache miss)
+342 http fetch GET 200 https://registry.npmjs.org/mime-types/-/mime-types-2.1.35.tgz 1846ms (cache miss)
+343 http fetch GET 200 https://registry.npmjs.org/react/-/react-19.0.0.tgz 2121ms (cache miss)
+344 http fetch GET 200 https://registry.npmjs.org/mime-db/-/mime-db-1.52.0.tgz 2157ms (cache miss)
+345 http fetch GET 200 https://registry.npmjs.org/openid-client/-/openid-client-5.7.1.tgz 2216ms (cache miss)
+346 http fetch GET 200 https://registry.npmjs.org/oauth/-/oauth-0.9.15.tgz 2216ms (cache miss)
+347 http fetch GET 200 https://registry.npmjs.org/styled-jsx/-/styled-jsx-5.1.6.tgz 2271ms (cache miss)
+348 http fetch GET 200 https://registry.npmjs.org/detect-libc/-/detect-libc-2.0.3.tgz 2250ms (cache miss)
+349 http fetch GET 200 https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz 2252ms (cache miss)
+350 http fetch GET 200 https://registry.npmjs.org/semver/-/semver-7.7.1.tgz 2279ms (cache miss)
+351 http fetch GET 200 https://registry.npmjs.org/is-arrayish/-/is-arrayish-0.3.2.tgz 2284ms (cache miss)
+352 http fetch GET 200 https://registry.npmjs.org/graceful-fs/-/graceful-fs-4.2.11.tgz 2298ms (cache miss)
+353 http fetch GET 200 https://registry.npmjs.org/sharp/-/sharp-0.33.5.tgz 2424ms (cache miss)
+354 http fetch GET 200 https://registry.npmjs.org/postcss/-/postcss-8.5.3.tgz 2484ms (cache miss)
+355 http fetch GET 200 https://registry.npmjs.org/lightningcss/-/lightningcss-1.29.2.tgz 2490ms (cache miss)
+356 http fetch GET 200 https://registry.npmjs.org/cookie/-/cookie-0.7.2.tgz 2498ms (cache miss)
+357 http fetch GET 200 https://registry.npmjs.org/concat-stream/-/concat-stream-2.0.0.tgz 2502ms (cache miss)
+358 http fetch GET 200 https://registry.npmjs.org/preact-render-to-string/-/preact-render-to-string-5.2.6.tgz 2521ms (cache miss)
+359 http fetch GET 200 https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz 2514ms (cache miss)
+360 http fetch GET 200 https://registry.npmjs.org/client-only/-/client-only-0.0.1.tgz 2513ms (cache miss)
+361 http fetch GET 200 https://registry.npmjs.org/color/-/color-4.2.3.tgz 2515ms (cache miss)
+362 http fetch GET 200 https://registry.npmjs.org/buffer-from/-/buffer-from-1.1.2.tgz 2527ms (cache miss)
+363 http fetch GET 200 https://registry.npmjs.org/enhanced-resolve/-/enhanced-resolve-5.18.1.tgz 2930ms (cache miss)
+364 http fetch GET 200 https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz 2995ms (cache miss)
+365 http fetch GET 200 https://registry.npmjs.org/append-field/-/append-field-1.0.0.tgz 3008ms (cache miss)
+366 http fetch GET 200 https://registry.npmjs.org/@types/range-parser/-/range-parser-1.2.7.tgz 3007ms (cache miss)
+367 http fetch GET 200 https://registry.npmjs.org/@types/send/-/send-0.17.5.tgz 3010ms (cache miss)
+368 http fetch GET 200 https://registry.npmjs.org/csstype/-/csstype-3.1.3.tgz 3050ms (cache miss)
+369 http fetch GET 200 https://registry.npmjs.org/bcryptjs/-/bcryptjs-3.0.2.tgz 3129ms (cache miss)
+370 http fetch GET 200 https://registry.npmjs.org/busboy/-/busboy-1.6.0.tgz 3145ms (cache miss)
+371 http fetch GET 200 https://registry.npmjs.org/@types/qs/-/qs-6.14.0.tgz 3270ms (cache miss)
+372 http fetch GET 200 https://registry.npmjs.org/jiti/-/jiti-2.4.2.tgz 3700ms (cache miss)
+373 http fetch GET 200 https://registry.npmjs.org/@types/mime/-/mime-1.3.5.tgz 3704ms (cache miss)
+374 http fetch GET 200 https://registry.npmjs.org/@types/express-serve-static-core/-/express-serve-static-core-5.0.6.tgz 3716ms (cache miss)
+375 http fetch GET 200 https://registry.npmjs.org/@types/http-errors/-/http-errors-2.0.5.tgz 3721ms (cache miss)
+376 http fetch GET 200 https://registry.npmjs.org/@types/express/-/express-5.0.3.tgz 3721ms (cache miss)
+377 http fetch GET 200 https://registry.npmjs.org/@types/multer/-/multer-1.4.13.tgz 3735ms (cache miss)
+378 http fetch GET 200 https://registry.npmjs.org/@types/serve-static/-/serve-static-1.15.8.tgz 3766ms (cache miss)
+379 http fetch GET 200 https://registry.npmjs.org/@types/connect/-/connect-3.4.38.tgz 4104ms (cache miss)
+380 http fetch GET 200 https://registry.npmjs.org/@types/react/-/react-19.0.12.tgz 4119ms (cache miss)
+381 http fetch GET 200 https://registry.npmjs.org/@types/bcryptjs/-/bcryptjs-2.4.6.tgz 4114ms (cache miss)
+382 http fetch GET 200 https://registry.npmjs.org/@tailwindcss/postcss/-/postcss-4.0.15.tgz 4135ms (cache miss)
+383 http fetch GET 200 https://registry.npmjs.org/@tailwindcss/oxide/-/oxide-4.0.15.tgz 4134ms (cache miss)
+384 http fetch GET 200 https://registry.npmjs.org/@types/body-parser/-/body-parser-1.19.6.tgz 4136ms (cache miss)
+385 http fetch GET 200 https://registry.npmjs.org/color-string/-/color-string-1.9.1.tgz 4181ms (cache miss)
+386 http fetch GET 200 https://registry.npmjs.org/@prisma/debug/-/debug-6.10.1.tgz 4451ms (cache miss)
+387 http fetch GET 200 https://registry.npmjs.org/@prisma/engines-version/-/engines-version-6.10.1-1.9b628578b3b7cae625e8c927178f15a170e74a9c.tgz 4456ms (cache miss)
+388 http fetch GET 200 https://registry.npmjs.org/@prisma/engines/-/engines-6.10.1.tgz 4483ms (cache miss)
+389 http fetch GET 200 https://registry.npmjs.org/@panva/hkdf/-/hkdf-1.2.1.tgz 4661ms (cache miss)
+390 http fetch GET 200 https://registry.npmjs.org/@tailwindcss/node/-/node-4.0.15.tgz 4665ms (cache miss)
+391 http fetch GET 200 https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz 5027ms (cache miss)
+392 http fetch GET 200 https://registry.npmjs.org/@next-auth/prisma-adapter/-/prisma-adapter-1.0.7.tgz 5211ms (cache miss)
+393 http fetch GET 200 https://registry.npmjs.org/@prisma/config/-/config-6.10.1.tgz 5229ms (cache miss)
+394 http fetch GET 200 https://registry.npmjs.org/@types/react-dom/-/react-dom-19.0.4.tgz 5218ms (cache miss)
+395 http fetch GET 200 https://registry.npmjs.org/@prisma/get-platform/-/get-platform-6.10.1.tgz 5243ms (cache miss)
+396 http fetch GET 200 https://registry.npmjs.org/@next/env/-/env-15.2.3.tgz 5263ms (cache miss)
+397 http fetch GET 200 https://registry.npmjs.org/preact/-/preact-10.26.9.tgz 5471ms (cache miss)
+398 http fetch GET 200 https://registry.npmjs.org/@swc/counter/-/counter-0.1.3.tgz 5473ms (cache miss)
+399 http fetch GET 200 https://registry.npmjs.org/@emnapi/runtime/-/runtime-1.3.1.tgz 5985ms (cache miss)
+400 http fetch GET 200 https://registry.npmjs.org/@img/sharp-darwin-x64/-/sharp-darwin-x64-0.33.5.tgz 6054ms (cache miss)
+401 http fetch GET 200 https://registry.npmjs.org/postcss/-/postcss-8.4.31.tgz 6212ms (cache miss)
+402 http fetch GET 200 https://registry.npmjs.org/@prisma/fetch-engine/-/fetch-engine-6.10.1.tgz 6313ms (cache miss)
+403 http fetch GET 200 https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.0.15.tgz 6390ms (cache miss)
+404 http fetch GET 200 https://registry.npmjs.org/@tailwindcss/oxide-darwin-x64/-/oxide-darwin-x64-4.0.15.tgz 6408ms (cache miss)
+405 http fetch GET 200 https://registry.npmjs.org/@types/node/-/node-20.17.27.tgz 6423ms (cache miss)
+406 http fetch GET 200 https://registry.npmjs.org/react-dom/-/react-dom-19.0.0.tgz 6805ms (cache miss)
+407 http fetch GET 200 https://registry.npmjs.org/@babel/runtime/-/runtime-7.27.6.tgz 7382ms (cache miss)
+408 http fetch GET 200 https://registry.npmjs.org/next-auth/-/next-auth-4.24.11.tgz 7930ms (cache miss)
+409 http fetch GET 200 https://registry.npmjs.org/lightningcss-darwin-x64/-/lightningcss-darwin-x64-1.29.2.tgz 8326ms (cache miss)
+410 http fetch GET 200 https://registry.npmjs.org/jose/-/jose-4.15.9.tgz 8484ms (cache miss)
+411 http fetch GET 200 https://registry.npmjs.org/@swc/helpers/-/helpers-0.5.15.tgz 9759ms (cache miss)
+412 http fetch GET 200 https://registry.npmjs.org/caniuse-lite/-/caniuse-lite-1.0.30001707.tgz 10248ms (cache miss)
+413 http fetch GET 200 https://registry.npmjs.org/prisma/-/prisma-6.10.1.tgz 10776ms (cache miss)
+414 http fetch GET 200 https://registry.npmjs.org/@img/sharp-libvips-darwin-x64/-/sharp-libvips-darwin-x64-1.0.4.tgz 10996ms (cache miss)
+415 http fetch GET 200 https://registry.npmjs.org/@prisma/client/-/client-6.10.1.tgz 11446ms (cache miss)
+416 http fetch GET 200 https://registry.npmjs.org/lucide-react/-/lucide-react-0.483.0.tgz 16306ms (cache miss)
+417 http fetch GET 200 https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-15.2.3.tgz 20181ms (cache miss)
+418 http fetch GET 200 https://registry.npmjs.org/string_decoder/-/string_decoder-1.3.0.tgz 20774ms attempt #2 (cache miss)
+419 http fetch GET 200 https://registry.npmjs.org/xtend/-/xtend-4.0.2.tgz 21025ms attempt #2 (cache miss)
+420 http fetch GET 200 https://registry.npmjs.org/typescript/-/typescript-5.8.2.tgz 21967ms attempt #2 (cache miss)
+421 http fetch GET 200 https://registry.npmjs.org/next/-/next-15.2.3.tgz 27810ms (cache miss)
+422 info run prisma@6.10.1 preinstall node_modules/prisma node scripts/preinstall-entry.js
+423 info run prisma@6.10.1 preinstall { code: 0, signal: null }
+424 info run sharp@0.33.5 install node_modules/sharp node install/check
+425 info run sharp@0.33.5 install { code: 0, signal: null }
+426 info run @prisma/client@6.10.1 postinstall node_modules/@prisma/client node scripts/postinstall.js
+427 info run @prisma/engines@6.10.1 postinstall node_modules/@prisma/engines node scripts/postinstall.js
+428 info run @prisma/engines@6.10.1 postinstall { code: 0, signal: null }
+429 info run @prisma/client@6.10.1 postinstall { code: 0, signal: null }
+430 silly ADD node_modules/yallist
+431 silly ADD node_modules/xtend
+432 silly ADD node_modules/uuid
+433 silly ADD node_modules/util-deprecate
+434 silly ADD node_modules/undici-types
+435 silly ADD node_modules/typescript
+436 silly ADD node_modules/typedarray
+437 silly ADD node_modules/type-is
+438 silly ADD node_modules/tslib
+439 silly ADD node_modules/tapable
+440 silly ADD node_modules/tailwindcss
+441 silly ADD node_modules/styled-jsx
+442 silly ADD node_modules/string_decoder
+443 silly ADD node_modules/streamsearch
+444 silly ADD node_modules/source-map-js
+445 silly ADD node_modules/simple-swizzle
+446 silly ADD node_modules/sharp
+447 silly ADD node_modules/semver
+448 silly ADD node_modules/scheduler
+449 silly ADD node_modules/safe-buffer
+450 silly ADD node_modules/readable-stream
+451 silly ADD node_modules/react-dom
+452 silly ADD node_modules/react
+453 silly ADD node_modules/prisma
+454 silly ADD node_modules/pretty-format
+455 silly ADD node_modules/preact-render-to-string
+456 silly ADD node_modules/preact
+457 silly ADD node_modules/postcss
+458 silly ADD node_modules/picocolors
+459 silly ADD node_modules/openid-client
+460 silly ADD node_modules/oidc-token-hash
+461 silly ADD node_modules/object-hash
+462 silly ADD node_modules/object-assign
+463 silly ADD node_modules/oauth
+464 silly ADD node_modules/next-auth
+465 silly ADD node_modules/next
+466 silly ADD node_modules/next/node_modules/postcss
+467 silly ADD node_modules/nanoid
+468 silly ADD node_modules/multer
+469 silly ADD node_modules/mkdirp
+470 silly ADD node_modules/minimist
+471 silly ADD node_modules/mime-types
+472 silly ADD node_modules/mime-db
+473 silly ADD node_modules/media-typer
+474 silly ADD node_modules/lucide-react
+475 silly ADD node_modules/lru-cache
+476 silly ADD node_modules/lightningcss-win32-x64-msvc
+477 silly ADD node_modules/lightningcss-win32-arm64-msvc
+478 silly ADD node_modules/lightningcss-linux-x64-musl
+479 silly ADD node_modules/lightningcss-linux-x64-gnu
+480 silly ADD node_modules/lightningcss-linux-arm64-musl
+481 silly ADD node_modules/lightningcss-linux-arm64-gnu
+482 silly ADD node_modules/lightningcss-linux-arm-gnueabihf
+483 silly ADD node_modules/lightningcss-freebsd-x64
+484 silly ADD node_modules/lightningcss-darwin-x64
+485 silly ADD node_modules/lightningcss-darwin-arm64
+486 silly ADD node_modules/lightningcss
+487 silly ADD node_modules/jose
+488 silly ADD node_modules/jiti
+489 silly ADD node_modules/is-arrayish
+490 silly ADD node_modules/inherits
+491 silly ADD node_modules/graceful-fs
+492 silly ADD node_modules/enhanced-resolve
+493 silly ADD node_modules/detect-libc
+494 silly ADD node_modules/csstype
+495 silly ADD node_modules/cookie
+496 silly ADD node_modules/concat-stream
+497 silly ADD node_modules/color-string
+498 silly ADD node_modules/color-name
+499 silly ADD node_modules/color-convert
+500 silly ADD node_modules/color
+501 silly ADD node_modules/client-only
+502 silly ADD node_modules/caniuse-lite
+503 silly ADD node_modules/busboy
+504 silly ADD node_modules/buffer-from
+505 silly ADD node_modules/bcryptjs
+506 silly ADD node_modules/append-field
+507 silly ADD node_modules/@types/serve-static
+508 silly ADD node_modules/@types/send
+509 silly ADD node_modules/@types/react-dom
+510 silly ADD node_modules/@types/react
+511 silly ADD node_modules/@types/range-parser
+512 silly ADD node_modules/@types/qs
+513 silly ADD node_modules/@types/node
+514 silly ADD node_modules/@types/multer
+515 silly ADD node_modules/@types/mime
+516 silly ADD node_modules/@types/http-errors
+517 silly ADD node_modules/@types/express-serve-static-core
+518 silly ADD node_modules/@types/express
+519 silly ADD node_modules/@types/connect
+520 silly ADD node_modules/@types/body-parser
+521 silly ADD node_modules/@types/bcryptjs
+522 silly ADD node_modules/@tailwindcss/postcss
+523 silly ADD node_modules/@tailwindcss/oxide-win32-x64-msvc
+524 silly ADD node_modules/@tailwindcss/oxide-win32-arm64-msvc
+525 silly ADD node_modules/@tailwindcss/oxide-linux-x64-musl
+526 silly ADD node_modules/@tailwindcss/oxide-linux-x64-gnu
+527 silly ADD node_modules/@tailwindcss/oxide-linux-arm64-musl
+528 silly ADD node_modules/@tailwindcss/oxide-linux-arm64-gnu
+529 silly ADD node_modules/@tailwindcss/oxide-linux-arm-gnueabihf
+530 silly ADD node_modules/@tailwindcss/oxide-freebsd-x64
+531 silly ADD node_modules/@tailwindcss/oxide-darwin-x64
+532 silly ADD node_modules/@tailwindcss/oxide-darwin-arm64
+533 silly ADD node_modules/@tailwindcss/oxide-android-arm64
+534 silly ADD node_modules/@tailwindcss/oxide
+535 silly ADD node_modules/@tailwindcss/node
+536 silly ADD node_modules/@swc/helpers
+537 silly ADD node_modules/@swc/counter
+538 silly ADD node_modules/@prisma/get-platform
+539 silly ADD node_modules/@prisma/fetch-engine
+540 silly ADD node_modules/@prisma/engines-version
+541 silly ADD node_modules/@prisma/engines
+542 silly ADD node_modules/@prisma/debug
+543 silly ADD node_modules/@prisma/config
+544 silly ADD node_modules/@prisma/client
+545 silly ADD node_modules/@panva/hkdf
+546 silly ADD node_modules/@next/swc-win32-x64-msvc
+547 silly ADD node_modules/@next/swc-win32-arm64-msvc
+548 silly ADD node_modules/@next/swc-linux-x64-musl
+549 silly ADD node_modules/@next/swc-linux-x64-gnu
+550 silly ADD node_modules/@next/swc-linux-arm64-musl
+551 silly ADD node_modules/@next/swc-linux-arm64-gnu
+552 silly ADD node_modules/@next/swc-darwin-x64
+553 silly ADD node_modules/@next/swc-darwin-arm64
+554 silly ADD node_modules/@next/env
+555 silly ADD node_modules/@next-auth/prisma-adapter
+556 silly ADD node_modules/@img/sharp-win32-x64
+557 silly ADD node_modules/@img/sharp-win32-ia32
+558 silly ADD node_modules/@img/sharp-wasm32
+559 silly ADD node_modules/@img/sharp-linuxmusl-x64
+560 silly ADD node_modules/@img/sharp-linuxmusl-arm64
+561 silly ADD node_modules/@img/sharp-linux-x64
+562 silly ADD node_modules/@img/sharp-linux-s390x
+563 silly ADD node_modules/@img/sharp-linux-arm64
+564 silly ADD node_modules/@img/sharp-linux-arm
+565 silly ADD node_modules/@img/sharp-libvips-linuxmusl-x64
+566 silly ADD node_modules/@img/sharp-libvips-linuxmusl-arm64
+567 silly ADD node_modules/@img/sharp-libvips-linux-x64
+568 silly ADD node_modules/@img/sharp-libvips-linux-s390x
+569 silly ADD node_modules/@img/sharp-libvips-linux-arm64
+570 silly ADD node_modules/@img/sharp-libvips-linux-arm
+571 silly ADD node_modules/@img/sharp-libvips-darwin-x64
+572 silly ADD node_modules/@img/sharp-libvips-darwin-arm64
+573 silly ADD node_modules/@img/sharp-darwin-x64
+574 silly ADD node_modules/@img/sharp-darwin-arm64
+575 silly ADD node_modules/@emnapi/runtime
+576 silly ADD node_modules/@babel/runtime
+577 silly ADD node_modules/@alloc/quick-lru
+578 verbose cwd /Users/bankolejohn/Desktop/Blog-app-test
+579 verbose os Darwin 22.6.0
+580 verbose node v22.13.0
+581 verbose npm  v11.5.2
+582 verbose exit 0
+583 info ok

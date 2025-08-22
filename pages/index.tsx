@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import { useSession, signOut } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import Button from "../components/ui/button"
@@ -64,6 +64,7 @@ export default function BlogApp() {
   const [selectedPost, setSelectedPost] = useState<number | null>(null)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [showUserMenu, setShowUserMenu] = useState(false)
+  const [searchQuery, setSearchQuery] = useState('')
 
   const handlePostClick = (postId: number) => {
     setSelectedPost(postId)
@@ -89,6 +90,16 @@ export default function BlogApp() {
     }
   }
 
+  const filteredPosts = useMemo(() => {
+    const q = searchQuery.trim().toLowerCase()
+    if (!q) return blogPosts
+    return blogPosts.filter((p) => {
+      return [p.title, p.excerpt, p.author, p.category]
+        .filter(Boolean)
+        .some((field) => String(field).toLowerCase().includes(q))
+    })
+  }, [searchQuery])
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-gray-100">
       {/* Header */}
@@ -99,7 +110,7 @@ export default function BlogApp() {
               <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-sm">B</span>
               </div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">BlogSpace</h1>
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent">JohndesiVentures</h1>
             </div>
             
             {/* Desktop Navigation */}
@@ -110,9 +121,12 @@ export default function BlogApp() {
               <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
-                <input 
-                  type="text" 
-                  placeholder="Search posts..." 
+                <input
+                  type="text"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  placeholder="Search posts..."
+                  aria-label="Search posts"
                   className="pl-10 pr-4 py-2 border border-gray-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 />
               </div>
@@ -182,9 +196,12 @@ export default function BlogApp() {
                 <a href="#" className="text-gray-600 hover:text-gray-900 transition-colors">Contact</a>
                 <div className="relative">
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
-                  <input 
-                    type="text" 
-                    placeholder="Search posts..." 
+                  <input
+                    type="text"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    placeholder="Search posts..."
+                    aria-label="Search posts"
                     className="w-full pl-10 pr-4 py-2 border border-gray-200 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                   />
                 </div>
@@ -199,7 +216,7 @@ export default function BlogApp() {
         <section className="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-700 text-white py-20">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              Welcome to <span className="text-yellow-300">BlogSpace</span>
+              Welcome to <span className="text-yellow-300">JohndesiVentures</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
               Discover amazing stories, insights, and tutorials from our community of passionate writers
@@ -229,51 +246,56 @@ export default function BlogApp() {
             >
               <ArrowLeft className="mr-2 h-4 w-4" /> Back to all posts
             </Button>
-            
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-              <img 
-                src={blogPosts[selectedPost - 1].image} 
-                alt={blogPosts[selectedPost - 1].title}
-                className="w-full h-64 md:h-96 object-cover"
-              />
-              
-              <div className="p-8 md:p-12">
-                <div className="flex items-center gap-4 mb-6">
-                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
-                    {blogPosts[selectedPost - 1].category}
-                  </span>
-                  <div className="flex items-center text-gray-500 text-sm">
-                    <User className="w-4 h-4 mr-1" />
-                    {blogPosts[selectedPost - 1].author}
+            {(() => {
+              const post = blogPosts.find((p) => p.id === selectedPost)
+              if (!post) return <div className="text-gray-600">Post not found.</div>
+              return (
+                <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-64 md:h-96 object-cover"
+                  />
+
+                  <div className="p-8 md:p-12">
+                    <div className="flex items-center gap-4 mb-6">
+                      <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
+                        {post.category}
+                      </span>
+                      <div className="flex items-center text-gray-500 text-sm">
+                        <User className="w-4 h-4 mr-1" />
+                        {post.author}
+                      </div>
+                    </div>
+
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">
+                      {post.title}
+                    </h1>
+
+                    <div className="flex items-center gap-6 mb-8 text-gray-500">
+                      <div className="flex items-center">
+                        <Calendar className="w-4 h-4 mr-2" />
+                        {new Date(post.date).toLocaleDateString('en-US', {
+                          year: 'numeric',
+                          month: 'long',
+                          day: 'numeric',
+                        })}
+                      </div>
+                      <div className="flex items-center">
+                        <Clock className="w-4 h-4 mr-2" />
+                        {post.readTime}
+                      </div>
+                    </div>
+
+                    <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
+                      {post.content.split('\n').map((paragraph: string, index: number) => (
+                        <p key={index} className="mb-6">{paragraph}</p>
+                      ))}
+                    </div>
                   </div>
                 </div>
-                
-                <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900 leading-tight">
-                  {blogPosts[selectedPost - 1].title}
-                </h1>
-                
-                <div className="flex items-center gap-6 mb-8 text-gray-500">
-                  <div className="flex items-center">
-                    <Calendar className="w-4 h-4 mr-2" />
-                    {new Date(blogPosts[selectedPost - 1].date).toLocaleDateString('en-US', { 
-                      year: 'numeric', 
-                      month: 'long', 
-                      day: 'numeric' 
-                    })}
-                  </div>
-                  <div className="flex items-center">
-                    <Clock className="w-4 h-4 mr-2" />
-                    {blogPosts[selectedPost - 1].readTime}
-                  </div>
-                </div>
-                
-                <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-                  {blogPosts[selectedPost - 1].content.split('\n').map((paragraph, index) => (
-                    <p key={index} className="mb-6">{paragraph}</p>
-                  ))}
-                </div>
-              </div>
-            </div>
+              )
+            })()}
           </article>
         ) : (
           <>
@@ -282,10 +304,16 @@ export default function BlogApp() {
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                 Explore our collection of insightful articles, tutorials, and stories
               </p>
+              {searchQuery && (
+                <p className="text-sm text-gray-500 mt-2">Showing {filteredPosts.length} result{filteredPosts.length === 1 ? '' : 's'} for "{searchQuery}"</p>
+              )}
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {blogPosts.map((post) => (
+              {filteredPosts.length === 0 && (
+                <div className="col-span-full text-center text-gray-500">No posts match your search.</div>
+              )}
+              {filteredPosts.map((post) => (
                 <Card 
                   key={post.id} 
                   className="group cursor-pointer bg-white hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden border-0 shadow-lg" 
@@ -347,7 +375,7 @@ export default function BlogApp() {
                 <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
                   <span className="text-white font-bold text-sm">B</span>
                 </div>
-                <h3 className="text-2xl font-bold">BlogSpace</h3>
+                <h3 className="text-2xl font-bold">JohndesiVentures</h3>
               </div>
               <p className="text-gray-400 mb-4 max-w-md">
                 Your go-to destination for insightful articles, tutorials, and stories from passionate writers around the world.
@@ -377,7 +405,7 @@ export default function BlogApp() {
           
           <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              &copy; 2024 BlogSpace. All rights reserved.
+              &copy; 2024 JohndesiVentures. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a>

@@ -60,15 +60,15 @@ export default function CreatePost() {
         }
       }
 
-      // Here you would typically save to your database
-      console.log({
-        title,
-        content,
-        excerpt,
-        category,
-        image: imageUrl,
-        authorId: session.user.id
+      const res = await fetch('/api/posts', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ title, content, excerpt, category, image: imageUrl }),
       })
+
+      if (!res.ok) {
+        throw new Error('Failed to create post')
+      }
 
       router.push('/')
     } catch (error) {

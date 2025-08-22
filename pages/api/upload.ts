@@ -1,7 +1,10 @@
 import { NextApiRequest, NextApiResponse } from 'next'
+import { getServerSession } from 'next-auth'
+import { authOptions } from './auth/[...nextauth]'
 import multer from 'multer'
 import path from 'path'
 import { promises as fs } from 'fs'
+import { getClientKeyFromRequestHeaders, isRateLimited } from '../../lib/rateLimiter'
 
 const upload = multer({
   storage: multer.diskStorage({
@@ -19,7 +22,8 @@ const upload = multer({
     fileSize: 5 * 1024 * 1024, // 5MB limit
   },
   fileFilter: (req, file, cb) => {
-    if (file.mimetype.startsWith('image/')) {
+    const allowed = ['image/png', 'image/jpeg', 'image/gif', 'image/webp']
+    if (allowed.includes(file.mimetype)) {
       cb(null, true)
     } else {
       cb(new Error('Only image files are allowed'))
@@ -50,6 +54,19 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   }
 
   try {
+    // Require authentication
+    const session = await getServerSession(req, res, authOptions)
+    if (!session) {
+      return res.status(401).json({ message: 'Unauthorized' })
+    }
+
+    // Rate limit: 20 uploads per 10 minutes per IP
+    const clientKey = getClientKeyFromRequestHeaders(req.headers as any)
+    const { limited } = isRateLimited(clientKey + ':upload', 10 * 60 * 1000, 20)
+    if (limited) {
+      return res.status(429).json({ message: 'Too many requests' })
+    }
+
     await runMiddleware(req, res, upload.single('image'))
     
     const file = (req as any).file

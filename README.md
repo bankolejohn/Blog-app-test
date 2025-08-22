@@ -34,7 +34,7 @@ A full-featured blog platform built with Next.js, featuring user authentication,
 
 3. **Set up environment variables:**
    ```bash
-   cp .env.local.example .env.local
+   cp .env.example .env.local
    ```
    Update `.env.local` with your values:
    ```
@@ -42,7 +42,7 @@ A full-featured blog platform built with Next.js, featuring user authentication,
    NEXTAUTH_SECRET=your-secret-key
    GOOGLE_CLIENT_ID=your-google-client-id
    GOOGLE_CLIENT_SECRET=your-google-client-secret
-   DATABASE_URL="file:./prisma/dev.db"
+   DATABASE_URL="file:./prisma/prisma/dev.db"
    ```
 
 4. **Set up database:**
@@ -68,6 +68,30 @@ A full-featured blog platform built with Next.js, featuring user authentication,
 6. Copy Client ID and Secret to `.env.local`
 
 ## Deploy to EC2 Ubuntu 22.04
+## Docker
+
+Build and run with Docker:
+
+```bash
+docker build -t blog-app .
+docker run --rm -p 3000:3000 \
+  -e NEXTAUTH_URL=http://localhost:3000 \
+  -e NEXTAUTH_SECRET=$(openssl rand -hex 32) \
+  -e DATABASE_URL="file:./prisma/prisma/dev.db" \
+  blog-app
+```
+
+To persist SQLite outside the container, mount a volume:
+
+```bash
+docker run --rm -p 3000:3000 \
+  -v $(pwd)/prisma/prisma:/app/prisma/prisma \
+  -e NEXTAUTH_URL=http://localhost:3000 \
+  -e NEXTAUTH_SECRET=$(openssl rand -hex 32) \
+  -e DATABASE_URL="file:./prisma/prisma/dev.db" \
+  blog-app
+```
+
 
 ### Prerequisites
 
@@ -109,7 +133,7 @@ NEXTAUTH_URL=https://your-domain.com
 NEXTAUTH_SECRET=your-production-secret
 GOOGLE_CLIENT_ID=your-google-client-id
 GOOGLE_CLIENT_SECRET=your-google-client-secret
-DATABASE_URL="file:./prisma/prod.db"
+   DATABASE_URL="file:./prisma/prisma/prod.db"
 ```
 
 ### 4. Update Nginx Configuration

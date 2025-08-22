@@ -1,6 +1,7 @@
 import { NextApiRequest, NextApiResponse } from 'next'
 import bcrypt from 'bcryptjs'
 import { prisma } from '../../../lib/prisma'
+import { getClientKeyFromRequestHeaders, isRateLimited } from '../../../lib/rateLimiter'
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   if (req.method !== 'POST') {
@@ -9,8 +10,29 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const { name, email, password } = req.body
 
-  if (!name || !email || !password) {
+  // Basic validation
+  if (typeof name !== 'string' || typeof email !== 'string' || typeof password !== 'string') {
+    return res.status(400).json({ message: 'Invalid request payload' })
+  }
+
+  if (!name.trim() || !email.trim() || !password.trim()) {
     return res.status(400).json({ message: 'Missing required fields' })
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+  if (!emailRegex.test(email)) {
+    return res.status(400).json({ message: 'Invalid email' })
+  }
+
+  if (password.length < 8) {
+    return res.status(400).json({ message: 'Password must be at least 8 characters' })
+  }
+
+  // Rate limit: 5 signups per 10 minutes per IP
+  const clientKey = getClientKeyFromRequestHeaders(req.headers as any)
+  const { limited } = isRateLimited(clientKey + ':signup', 10 * 60 * 1000, 5)
+  if (limited) {
+    return res.status(429).json({ message: 'Too many requests' })
   }
 
   try {

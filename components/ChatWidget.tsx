@@ -21,11 +21,17 @@ export default function ChatWidget() {
       {/* Chat Widget */}
       {isOpen && (
         <div className="fixed bottom-24 right-6 w-80 h-96 bg-white border border-gray-200 rounded-lg shadow-xl z-40 overflow-hidden">
-          <iframe 
-            src="http://localhost:5002" 
-            className="w-full h-full border-0"
-            title="Chat Support"
-          />
+          {process.env.NEXT_PUBLIC_CHAT_URL ? (
+            <iframe
+              src={process.env.NEXT_PUBLIC_CHAT_URL}
+              className="w-full h-full border-0"
+              title="Chat Support"
+            />
+          ) : (
+            <div className="w-full h-full flex items-center justify-center text-sm text-gray-500 p-4 text-center">
+              Chat unavailable. Set NEXT_PUBLIC_CHAT_URL in env to enable.
+            </div>
+          )}
         </div>
       )}
     </>
